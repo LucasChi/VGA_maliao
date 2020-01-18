@@ -1,0 +1,355 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Sep 11 09:56:49 2019
+# Process ID: 8576
+# Current directory: E:/vivado/Maliao/project_all _add/project_all
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11256 E:\vivado\Maliao\project_all _add\project_all\project_all.xpr
+# Log file: E:/vivado/Maliao/project_all _add/project_all/vivado.log
+# Journal file: E:/vivado/Maliao/project_all _add/project_all\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/vivado/Maliao/project_all _add/project_all/project_all.xpr}
+INFO: [Project 1-313] Project file moved from 'E:/vivado/Maliao/project_all/project_all' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 684.254 ; gain = 93.008
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 10:10:17 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 10:18:20 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 10:20:35 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 10:35:13 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 10:37:13 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 10:39:20 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 10:59:36 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 11:03:45 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 11:06:16 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 11:11:00 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 11:13:37 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 11:15:30 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 12:05:06 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 12:07:39 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 12:09:10 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 12:13:15 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 12:15:02 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 12:17:00 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 12:22:06 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 12:23:52 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 12:25:35 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 12:37:56 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 12:41:38 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 12:43:06 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 12:56:57 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 12:58:46 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 13:00:27 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 13:06:36 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 13:08:32 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 13:10:06 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 13:47:42 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 13:49:35 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 13:51:15 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 13:53:10 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 13:55:04 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 13:56:46 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:06:00 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 14:07:57 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:13:14 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 14:15:00 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:17:24 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 14:19:27 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:26:27 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 14:28:23 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 14:30:46 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:39:55 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:41:34 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 14:43:24 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 14:45:13 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:56:08 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Sep 11 14:56:48 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Sep 11 14:58:30 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 15:00:07 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Sep 11 15:05:48 2019] Launched synth_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/synth_1/runme.log
+[Wed Sep 11 15:05:48 2019] Launched impl_1...
+Run output will be captured here: E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/vivado/Maliao/project_all _add/project_all/project_all.runs/impl_1/project_all.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 11 15:14:41 2019...
